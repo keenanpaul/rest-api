@@ -27,6 +27,7 @@ router.get("/:id", (request, response) => {
 });
 
 router.post("/add", (request, response) => {
+  console.log("add exercise");
   const exercise = new Exercise({
     username: request.body.username,
     description: request.body.description,

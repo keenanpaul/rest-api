@@ -25,6 +25,7 @@ router.get("/:id", (request, response) => {
 });
 
 router.post("/add", (request, response) => {
+  console.log("add");
   const user = new User({
     username: request.body.username
   });

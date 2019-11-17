@@ -7,7 +7,7 @@ const exerciseRouter = require("./routes/exercisesRoute");
 require("dotenv").config();
 
 const databaseURL = process.env.DATABASE_CONNECTION;
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
